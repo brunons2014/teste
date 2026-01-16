@@ -4,7 +4,7 @@ API_KEY = "d79de0249cd455e8aac686f898f03317"
 
 cidade = "campo grande"
 
-link = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={API_KEY}"
+link = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={API_KEY}&lang=pt_br"
 
 requisicao = requests.get(link)
 requisicao_dict = requisicao.json()
