@@ -8,7 +8,7 @@ from datetime import datetime
 
 # 1. Configuração do banco (Conecta ao serviço 'db' do Docker)
 # Nota: 'db' é o nome do serviço definido no seu docker-compose.yml
-engine = create_engine('postgresql://usuario:senha@db:5432/clima_db')
+engine = create_engine('postgresql://usuario:senha@localhost:5432/clima_db')
 Base = declarative_base()
 
 class RegistroClima(Base):
