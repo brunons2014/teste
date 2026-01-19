@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Campo Grande - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌦️ Monitoramento Climático</h1>
+            <p>Campo Grande, MS</p>
+        </header>
+
+        <div id="loading">Carregando dados...</div>
+        
+        <div class="main-card" id="current-weather" style="display: none;">
+            <h2 id="temp-atual">0°C</h2>
+            <p id="desc-atual">Céu limpo</p>
+            <small id="data-atual">--/--/---- --:--</small>
+        </div>
+
+        <section class="history">
+            <h3>Histórico de Capturas</h3>
+            <table id="history-table">
+                <thead>
+                    <tr>
+                        <th>Data/Hora</th>
+                        <th>Temperatura</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
